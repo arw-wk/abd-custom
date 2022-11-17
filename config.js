@@ -9,4 +9,10 @@ window.DRAWIO_CONFIG = {'defaultLibraries':''}; // Replace with your custom draw
 urlParams['sync'] = 'auto';
 urlParams['clibs'] = 'Uhttps%3A%2F%2Fraw.githubusercontent.com%2Farw-wk%2Fabd-custom%2Fmain%2Fbd_library.xml'
 urlParams['create'] = 'https://arw-wk.github.io/abd-custom/bd_template.drawio'
-//urlParams['libs'] = '%02%03'; // Required for defaultLlibraries above to work
+urlParams['gapi'] = '0'
+urlParams['db'] = '0'
+urlParams['od'] = '0'
+urlParams['tr'] = '0'
+urlParams['gh'] = '0'
+urlParams['gl'] = '0'
+
