@@ -8,5 +8,5 @@ window.DRAW_MATH_URL = 'math/es5';
 window.DRAWIO_CONFIG = {'defaultLibraries':''}; // Replace with your custom draw.io configurations. For more details, https://www.diagrams.net/doc/faq/configure-diagram-editor
 urlParams['sync'] = 'auto';
 urlParams['clibs'] = 'Uhttps%3A%2F%2Fraw.githubusercontent.com%2Farw-wk%2Fabd-custom%2Fmain%2Fbd_library.xml'
-urlParams['create'] = 'Uhttps%3A%2F%2Fraw.githubusercontent.com%2Farw-wk%2Fabd-custom%2Fmain%2Fbd_template.drawio.xml'
+//urlParams['create'] = 'Uhttps%3A%2F%2Fraw.githubusercontent.com%2Farw-wk%2Fabd-custom%2Fmain%2Fbd_template.drawio.xml'
 //urlParams['libs'] = '%02%03'; // Required for defaultLlibraries above to work
