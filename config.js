@@ -6,6 +6,7 @@ window.DRAWIO_VIEWER_URL = 'https://arw-wk.github.io/abd/src/main/webapp/js/view
 window.DRAWIO_LIGHTBOX_URL = 'https://arw-wk.github.io/abd/src/main/webapp/'; // Replace with your lightbox URL, eg. https://www.example.com
 window.DRAW_MATH_URL = 'math/es5';
 window.DRAWIO_CONFIG = {'defaultLibraries':''}; // Replace with your custom draw.io configurations. For more details, https://www.diagrams.net/doc/faq/configure-diagram-editor
+window.ALLOW_CUSTOM_PLUGINS = 1;
 urlParams['sync'] = 'auto';
 urlParams['clibs'] = 'Uhttps%3A%2F%2Fraw.githubusercontent.com%2Farw-wk%2Fabd-custom%2Fmain%2Fbd_library.xml'
 urlParams['create'] = 'https://arw-wk.github.io/abd-custom/bd_template.drawio'
