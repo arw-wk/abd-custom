@@ -32,7 +32,7 @@ Draw.loadPlugin(function(ui)
 		
 		if (graph.model.isVertex(graph.getSelectionCell()))
 		{
-			this.addMenuItems(menu, ['-', 'exploreFromHere'], null, evt);
+			//this.addMenuItems(menu, ['-', 'exploreFromHere'], null, evt);
 			this.addMenuItems(menu, ['-', 'blockTop'], null, evt);
 			this.addMenuItems(menu, ['-', 'blockTop', '-','MCU'], null, evt);
 		}
