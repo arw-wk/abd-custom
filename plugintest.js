@@ -7,36 +7,39 @@ Draw.loadPlugin(function(ui)
 	mxResources.parse('exploreFromHere=Explore from here...');
 	mxResources.parse('blockTop=Block')
 	mxResources.parse('blockSubMCU=MCU')
-	mxResources.parse('blockSubMCU=Memory')
-	mxResources.parse('blockSubMCU=Power')
-	mxResources.parse('blockSubMCU=Protection')
+	mxResources.parse('blockSubMemory=Memory')
+	mxResources.parse('blockSubPower=Power')
+	mxResources.parse('blockSubProtect=Protection')
 	
 	mxResources.parse('blockSubSubMCU=DC-DC')
 	mxResources.parse('blockSubSubMCU=AC-DC')
 	mxResources.parse('blockSubSubMCU=Modulee')
 	mxResources.parse('blockSubSubMCU=Processor')
-	mxResources.parse('blockSubSubMCU=SOM')
-	mxResources.parse('blockSubSubMCU=SBC')
-	mxResources.parse('blockSubSubMCU=TVS')
-	mxResources.parse('blockSubSubMCU=ESD')
+	mxResources.parse('blockSubSubSom=SOM')
+	mxResources.parse('blockSubSubSbc=SBC')
+	mxResources.parse('blockSubSubTvs=TVS')
+	mxResources.parse('blockSubSubEsd=ESD')
 	
 	// Max number of edges per page
 	var pageSize = 20;
 
-	var uiCreatePopupMenu = ui.menus.createPopupMenu;
-	ui.menus.createPopupMenu = function(menu, cell, evt)
-	{
-		uiCreatePopupMenu.apply(this, arguments);
-		
-		var graph = ui.editor.graph;
-		
-		if (graph.model.isVertex(graph.getSelectionCell()))
-		{
-			//this.addMenuItems(menu, ['-', 'exploreFromHere'], null, evt);
-			this.addMenuItems(menu, ['-', 'blockTop'], null, evt);
-			//this.addMenuItems(menu, ['-', 'blockTop', '-','MCU'], null, evt);
-		}
-	};
+// Adds resource for action
+	    mxResources.parse('menuBlock=Blocks');
+	    mxResources.parse('menuBlockItems=Block Items');
+	
+	    // Adds action
+	    ui.actions.addAction('helloWorldAction', function() {
+	        var ran = Math.floor((Math.random() * 100) + 1);
+	        mxUtils.alert('A random number is ' + ran);
+	    });
+	
+	    // Adds menu
+	    ui.menubar.addMenu('Blocks', function(menu, parent) {
+	        ui.menus.addMenuItem(menu, 'blockSubMCU');
+		ui.menus.addMenuItem(menu, 'blockSubMemory');
+		ui.menus.addMenuItem(menu, 'blockSubPower');
+		ui.menus.addMenuItem(menu, 'blockSubProtect');
+	    });
 
 
 
