@@ -35,10 +35,10 @@ Draw.loadPlugin(function(ui)
 	
 	    // Adds menu
 	    ui.menubar.addMenu('Blocks', function(menu, parent) {
-	        ui.menus.addMenuItem(menu, 'blockSubMCU');
-		ui.menus.addMenuItem(menu, 'blockSubMemory');
-		ui.menus.addMenuItem(menu, 'blockSubPower');
-		ui.menus.addMenuItem(menu, 'blockSubProtect');
+	        ui.menus.addMenuItem(menu, 'blockSubMCU', parent);
+		ui.menus.addMenuItem(menu, 'blockSubMemory, parent');
+		ui.menus.addMenuItem(menu, 'blockSubPower, parent');
+		ui.menus.addMenuItem(menu, 'blockSubProtect, parent');
 	    });
 
 
